@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 1 - Primeiros Passos com HTML</title>
+</head>
+<body>
+    
+<header>
+Módulo 1 - Primeiros Passos com HTML
+<br />
+
+<h1 id="indice">Índice</h1>
+
+<p><strong><u>INSTRUÇÕES:</u></strong> Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+<ul>
+  <li><a href="#">História dos computadores</a></li>
+  <li><a href="#">O que são Clients?</a></li>
+  <li><a href="#">O que são Servers?</a></li>
+  <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
+  <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+  <li><a href="#links">Links de referências</a></li>
+</ul>   
+</header>
+<main>
+<section>
+  
+  <h2 id="historia_computador">História dos computadores <a href="#indice" style="font-size: 11px; margin-right: 10px;">🔝 Topo</a></h2> 
+  <p>
+    A história dos computadores começou com máquinas de cálculo mecânicas, como a 
+    <strong>Máquina analítica de Charles Babbage</strong> <i>no século XIX</i>. 
+    No <i>século XX</i>, surgiram o s primeiros computadores eletrônicos, como o 
+    <strong>ENIAC (1946)</strong>, enormes e programados manualmente. A evolução 
+    seguiu com os <strong>transistores</strong> nos anos 1950, <Strong>circuitos integrados</Strong> nos anos 1960, e o 
+    <Strong>microprocessador</Strong> nos anos 1970, levando ao surgimento dos computadores 
+    pessoais (PCs). A partir dos anos 1990, com a popularização da <Strong>internet</Strong>, 
+    os computadores se tornaram essenciais no cotidiano, evoluindo até os atuais 
+    dispositivos móveis e sistemas baseados em <Strong>inteligência artificial</Strong>
+  </p>
+</section>
+<section>
+<h2>O que são Clients? <a href="#indice" style="font-size: 11px; margin-right: 10px;">🔝 Topo</a></h2>
+
+Na computação, <strong>clients</strong> (ou clientes) são dispositivos ou programas que solicitam serviços ou recursos de um <strong>servidor</strong> em uma rede. Eles não funcionam de forma isolada, mas dependem de um servidor para acessar dados, realizar operações ou se comunicar com outros sistemas. Um exemplo clássico é o <strong>navegador de internet</strong>, que atua como client ao pedir páginas web a um servidor. Em sistemas cliente-servidor, o client inicia a comunicação, enquanto o servidor responde às requisições. Essa arquitetura é comum em aplicações web, bancos de dados, redes corporativas e muito mais.
+</section>
+
+<section>
+<h2>O que são Servers? <a href="#indice" style="font-size: 11px; margin-right: 10px;">🔝 Topo</a> </h2>
+<p>
+  <strong>Servers</strong> (ou servidores) são computadores ou programas especializados em fornecer serviços, dados ou recursos para outros dispositivos chamados clients. Eles funcionam como o "cérebro central" de uma rede, aguardando e respondendo a solicitações feitas pelos clientes. Exemplos comuns de servidores incluem: servidor web (entrega sites), servidor de arquivos (armazena documentos), e servidor de e-mail (gerencia mensagens). Em essência, o servidor está sempre disponível, oferecendo suporte para que outras máquinas ou softwares possam funcionar corretamente
+</p>
+</section>
+
+<section>
+<h2>Como é uma estrutura básica de um HTML? <a href="#indice" style="font-size: 11px; margin-right: 10px;">🔝 Topo</a></h2>
+</section>
+<p>
+  Aqui está um exemplo simples da estrutura fundamental de um documento HTML:
+  <pre>
+    <code>
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="pt-BR"&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Título da Página&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
+        &lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;
+
+    </code>
+  </pre>
+  Explicação rápida:
+
+  <ul>
+    <li><mark>&lt;!DOCTYPE html&gt;</mark>: Declara que o documento está em HTML5.</li>
+    <li><mark>&lt;html&gt;</mark>: Raiz do documento HTML.</li>
+    <li><mark>&lt;head&gt;</mark>: Contém metadados, título da aba, codificação, etc.</li>
+    <li><mark>&lt;body&gt;</mark>: Onde vai o conteúdo visível da página (textos, imagens, links, etc.).</li>
+  </ul>
+</p>
+
+<section>
+<h2>Entendendo a diferença entre listas ordenadas e não ordenadas <a href="#indice" style="font-size: 11px; margin-right: 10px;">🔝 Topo</a></h2>
+<p>
+  <ol>
+    <li>
+      <h3>Lista Ordenada (&lt;ol&gt;</h3>
+      <ul>
+        <li>Os itens aparecem em <strong>uma ordem especifica</strong> (numérica, alfabética, etc.).</li>
+        <li>O navegador <strong>automáticamente</strong> numera os elementos da lista</li>
+        <li>Exemplo:
+          <pre>
+            <code>
+              &lt;ol&gt;
+                &lt;li&gt;Primeiro passo&lt;/li&gt;
+                &lt;li&gt;Segundo passo&lt;/li&gt;
+                &lt;li&gt;Terceiro passo&lt;/li&gt;
+              &lt;/ol&gt;
+            </code>
+          </pre>
+      
+          Isso será exibido como:
+          <ol>
+            <li>Primeiro passo</li>
+            <li>Segundo passo</li>
+            <li>Terceiro passo</li>
+          </ol>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <h3>Lista não Ordenada (&lt;ul&gt;)</h3>
+      <ul>
+        <li>Os itens <strong>não tem uma sequência obrigatória</strong>.</li>
+        <li>Cada item é exibido com um marcador (ponto, quadrado, circulo)</li>
+        <li>Exemplo:
+          <pre>
+            <code>
+              &lt;ul&gt;
+                &lt;li&gt;Maçã&lt;/li&gt;
+                &lt;li&gt;Bananas&lt;/li&gt;
+                &lt;li&gt;Laranja&lt;/li&gt;
+              &lt;/ul&gt;
+            </code>
+          </pre>
+      
+          Isso será exibido como:
+          <ul>
+            <li>Maçã</li>
+            <li>Banana</li>
+            <li>Laranja</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ol>
+</p>
+</section>
+</main>
+
+<footer>
+  <h2 id="links">Links de referências <a href="#indice" style="font-size: 11px; margin-right: 10px;">🔝 Topo</a></h2>
+  <ul>
+    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ul">Documentação oficial do HTML - MDN</a></li>
+    <li><a href="https://www.w3.org/standards/webdesign/htmlcss">Boas práticas em HTML e CSS - W3C</a></li>
+    <li><a href="https://www.w3schools.com/html">Listas ordenadas e não ordenadas - W3Schools</a></li>
+  </ul>
+  </footer>
+</body>
+</html>     
